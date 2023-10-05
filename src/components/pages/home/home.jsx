@@ -6,32 +6,32 @@ import Footer from "../../layouts/footer/footer.jsx";
 import { useState, useEffect } from "react";
 
 function home() {
-  const { laptop, setLaptop } = useState([]);
+	const [laptop, setLaptop] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("../data/product.json");
-        const jsonData = await response.json();
-        const laptops = jsonData.laptop;
-        setLaptop(laptops);
-      } catch (error) {
-        console.error("error ffetching data", error);
-      }
-    };
-    fetchData();
-  }, []);
-  console.log(laptop);
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const response = await fetch("./data/product.json");
+				const jsonData = await response.json();
+				const laptops = jsonData.laptop;
+				setLaptop(laptops);
+			} catch (error) {
+				console.error("error ffetching data", error);
+			}
+		};
+		fetchData();
+	}, []);
+	console.log(laptop);
 
-  return (
-    <div>
-      <Navbar />
-      <Iklan />
-      <Cards />
-      <Promosi />
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<Navbar />
+			<Iklan />
+			<Cards />
+			<Promosi />
+			<Footer />
+		</div>
+	);
 }
 
 export default home;
