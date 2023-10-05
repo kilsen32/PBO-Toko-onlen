@@ -1,0 +1,44 @@
+{
+    "laptop": [
+        {
+            "id": 1,
+            "name":"laptop 1",
+            "poster_path":"bit.ly/Jika1maka1",
+            "price":50000,
+            "stock":234,
+            "desc":"laptop anti air"
+        },
+        {
+            "id": 2,
+            "name":"laptop 2",
+            "poster_path":"bit.ly/Jika1maka1",
+            "price":50000,
+            "stock":234,
+            "desc":"laptop anti air"
+        },
+        {
+            "id": 3,
+            "name":"laptop 3",
+            "poster_path":"bit.ly/Jika1maka1",
+            "price":50000,
+            "stock":234,
+            "desc":"laptop anti air"
+        },
+        {
+            "id": 4,
+            "name":"laptop 4",
+            "poster_path":"bit.ly/Jika1maka1",
+            "price":50000,
+            "stock":234,
+            "desc":"laptop anti air"
+        },
+        {
+            "id": 5,
+            "name":"laptop 5",
+            "poster_path":"bit.ly/Jika1maka1",
+            "price":50000,
+            "stock":234,
+            "desc":"laptop anti air"
+        }
+    ]
+}
